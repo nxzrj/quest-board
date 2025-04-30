@@ -1,10 +1,8 @@
 import type { Quest } from "@/model/quest";
 import styles from "./page.module.css";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Quest({ questInfo }: { questInfo: Quest }) {
-  const router = useRouter();
   const [isQuestDetailOpen, setIsQuestDetailOpen] = useState(false);
 
   const showQuestDetailModal = () => setIsQuestDetailOpen(true);
