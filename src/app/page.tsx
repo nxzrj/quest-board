@@ -1,13 +1,10 @@
 "use client";
-import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Quest from "./components/quest/page";
-import { M_PLUS_1 } from "next/font/google";
 import Link from "next/link";
 
 export default function Home() {
-  const router = useRouter();
   const [isRequestOpen, setIsRequestOpen] = useState(false);
 
   const showRequestModal = () => setIsRequestOpen(true);
@@ -60,7 +57,6 @@ export default function Home() {
       description: "訓練場で剣術の試練をクリアしよう。",
     },
   ];
-  let i = 1;
 
   return (
     <>
