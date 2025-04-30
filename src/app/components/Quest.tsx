@@ -3,8 +3,14 @@ import styles from "../page.module.css";
 import { useState } from "react";
 
 export type Quest = {
+  id: number;
+  genre: string;
   title: string;
   description: string;
+  hostName: string;
+  createdAt: string;
+  maxMembers: number;
+  currentMembers: number;
 };
 
 export const Quest = ({ questInfo }: { questInfo: Quest }) => {
@@ -29,6 +35,9 @@ export const Quest = ({ questInfo }: { questInfo: Quest }) => {
           >
             <h2>{questInfo.title}</h2>
             <p>{questInfo.description}</p>
+            <p>ホスト：{questInfo.hostName}</p>
+            <p>募集人数：{questInfo.maxMembers - questInfo.currentMembers}</p>
+            <p>現在の人数：{questInfo.currentMembers}</p>
           </div>
         </div>
       )}

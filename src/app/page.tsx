@@ -1,6 +1,6 @@
 "use client";
 import styles from "./page.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Quest } from "./components/Quest";
 import { quests } from "./lib/placeholder-data";
 import Link from "next/link";
