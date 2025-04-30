@@ -3,7 +3,7 @@ import type { Quest } from "@/model/quest";
 import styles from "./page.module.css";
 import { useState } from "react";
 
-export default function Quest({ questInfo }: { questInfo: Quest }) {
+export const Quests = ({ questInfo }: { questInfo: Quest }) => {
   const [isQuestDetailOpen, setIsQuestDetailOpen] = useState(false);
 
   const showQuestDetailModal = () => setIsQuestDetailOpen(true);
@@ -30,4 +30,4 @@ export default function Quest({ questInfo }: { questInfo: Quest }) {
       )}
     </>
   );
-}
+};
