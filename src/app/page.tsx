@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import { useState } from "react";
-import { Quests } from "./components/quest/page";
+import { Quest } from "./components/quest/Quest";
 import Link from "next/link";
 
 export default function Home() {
@@ -78,7 +78,7 @@ export default function Home() {
         }}
       >
         {quests.map((quest, index) => (
-          <Quests key={index} questInfo={quest} />
+          <Quest key={index} questInfo={quest} />
         ))}
       </div>
       <Footer />

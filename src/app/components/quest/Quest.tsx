@@ -1,9 +1,13 @@
 "use client";
-import type { Quest } from "@/model/quest";
 import styles from "./page.module.css";
 import { useState } from "react";
 
-export const Quests = ({ questInfo }: { questInfo: Quest }) => {
+export type Quest = {
+  title: string;
+  description: string;
+};
+
+export const Quest = ({ questInfo }: { questInfo: Quest }) => {
   const [isQuestDetailOpen, setIsQuestDetailOpen] = useState(false);
 
   const showQuestDetailModal = () => setIsQuestDetailOpen(true);
