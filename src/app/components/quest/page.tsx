@@ -1,3 +1,4 @@
+"use client";
 import type { Quest } from "@/model/quest";
 import styles from "./page.module.css";
 import { useState } from "react";
