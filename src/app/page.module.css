@@ -128,16 +128,6 @@ a.secondary {
   height: 80%;
 }
 
-.header {
-  background-color: #383838;
-  color: #f2f2f2;
-}
-
-.footer {
-  background-color: #383838;
-  color: #f2f2f2;
-}
-
 .paper {
   background-color: #ffffff; /* やさしい紙っぽい色 */
   border: 2px solid #000000; /* オレンジ系の枠線 */

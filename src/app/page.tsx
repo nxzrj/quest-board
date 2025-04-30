@@ -40,9 +40,11 @@ export default function Home() {
       <div
         style={{
           display: "flex",
-          flexWrap: "wrap", // 折り返し
-          gap: "16px", // 適度な間隔（なくてもOK）
-          justifyContent: "flex-start", // ← 左詰め！！
+          flexWrap: "wrap",
+          gap: "30px",
+          justifyContent: "flex-start",
+          marginLeft: "30px",
+          marginRight: "30px",
         }}
       >
         {showingGenre === "ALL"
