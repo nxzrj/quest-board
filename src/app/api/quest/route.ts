@@ -4,7 +4,6 @@ export async function POST(request: Request) {
   const body = await request.json(); // フロントから送られてきたデータ
   const { userName, password } = body;
 
-  // ログイン処理ここに書く（例：DBチェックとか）
   if (userName === "a" && password === "a") {
     return NextResponse.json({ success: true, message: "ログイン成功" });
   }
