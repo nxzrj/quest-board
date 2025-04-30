@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import { useState } from "react";
-import { Quest } from "./components/quest/Quest";
+import { Quest } from "./components/Quest";
 import Link from "next/link";
 
 export default function Home() {
